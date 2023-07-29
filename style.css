@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  width: 100%;
+  height: 100%;
+  background: #ecd9b3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+}
+
+h2 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.Title{
+    font-size: larger;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.menu a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  margin: 0 1rem;
+  background-color: #aa72d8;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  color: #fff;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  min-width: 150px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.menu a:hover {
+  background-color: #874fc7;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+}
+
+.store-itms {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.store-itms:hover {
+  transform: translateY(-5px);
+}
+
+.store-itms img {
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 4rem;
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .menu a {
+    margin: 0.5rem;
+  }
+}
